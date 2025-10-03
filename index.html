@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Chat Local</title>
+    <link rel="stylesheet" href="mini chat.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="miniChat.js"></script>
+
+</head>
+<body>
+    
+    
+   
+    <div class="login">
+        <p class="Créer">
+        <h1>Créer un compte</h1>
+        </p>
+        <br>
+        <input type="text" id="username" placeholder="Pseudo" required>
+        <i class='bx bxs-user-circle' ></i>
+        <br>
+        <br/>
+        <br>
+        <br>
+        <br>
+
+        <input type="file" id="avatar" accept="image/*">
+        <button onclick="saveProfile()">Enregistrer</button>
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div id="chat-box"></div>
+        <input type="text" id="message-input" placeholder="Écrivez un message...">
+        <button id="send-btn" onclick="sendMessage()">Envoyer</button>
+    </div>
+
+</body>
+</html>
